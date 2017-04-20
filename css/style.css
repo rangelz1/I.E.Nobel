@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 1.5px;
 }
 
-/* header */
+/*----------------------------------header----------------------------------*/
 .header {
 	height: 60px;
 }
@@ -43,17 +43,36 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 45px;
 	border-radius: 5px;
 	margin-left: auto;
+	cursor: pointer;
 }
-
+/*--------------------------------menu-bar--------------------------------*/
 .nav{
 	position: absolute;
 	top: 60px;
-	left: 0;
+	left: -100%;
 	width: 100%;
+	transition: all 0.4s;
 }
 
 .menu {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+.menu__link {
+	display: block;
+	padding: 20px;
+	background: #fba919;
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu__link:hover {
+	background: white;
+	color: #fba919;
+}
+
+.show {
+	left: 0;
 }
