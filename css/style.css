@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
-	display: border-box;
+	box-sizing: border-box;
 }
 
 img {
@@ -144,6 +144,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 25px;
 	margin: 5px 0;
 }
+.courses_img {
+	width: 100%;
+}
 
 /*-------------------------------------- footer style --------------------------------------*/
 
@@ -189,11 +192,11 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: -90px;
 	}
 	.info__column {
-		width: 28%;
+		width: 32%;
 	}
 	.info__title {
 		font-size: 30px;
-		margin: 5px 0;
+		margin: 10px 0;
 	}
 	.section__title {
 		width: 100%;
@@ -251,6 +254,12 @@ h1, h2, h3, h4, h5, h6 {
 	.banner__txt {
 		font-size: 25px;
 	}
+	.info {
+		margin-top: -120px;
+	}
+	.info__column {
+		padding: 30px;
+	}
 	.info__title {
 		font-size: 40px;
 		text-align: center;
@@ -261,13 +270,31 @@ h1, h2, h3, h4, h5, h6 {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		align-content: center;
 	}
 	.courses__title {
 		font-size: 50px;
+		margin: 0;
 	}
 	.courses__txt {
 		font-size: 20px;
 	}
+}
+
+@media(min-width: 1280px) {
+	.container {
+		width: 70%;
+	}
+	.logo {
+		margin-top: 60px;
+	}
+	.banner .container {
+		top: 40%;
+	}
+	.info {
+		margin-top: -200px;
+	}
+
 }
 
 
