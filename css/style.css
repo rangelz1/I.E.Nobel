@@ -161,3 +161,52 @@ h1, h2, h3, h4, h5, h6 {
 	height: 50px;
 	line-height: 40px;
 }
+
+/*-----------------------------------------Styling for responsive features-----------------------------------------*/
+
+@media(min-width: 480px) {
+	.logo {
+		font-size: 40px;
+	}
+	.banner__title {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.banner__txt {
+		display: block;
+		font-size: 18px;
+		margin: 7px 0;
+	}
+
+	.info, .courses {
+		display: flex;
+		justify-content: space-between;
+		margin-top: -90px;
+	}
+	.info__column {
+		width: 28%;
+	}
+	.info__title {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.section__title {
+		width: 100%;
+	}
+	.courses {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+	.courses__column {
+		width: 48%;
+	}
+}
+
+
+
+
+
+
+
+
+
