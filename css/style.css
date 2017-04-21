@@ -10,6 +10,7 @@ img {
 }
 
 body {
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -30,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo, .icon-menu {
 	margin: 5px;
+	color: #fff;
 }
 
 .icon-menu {
@@ -38,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 	height: 40px;
 	font-size: 30px;
 	background-color: #fba919;
-	color: #fff;
 	text-align: center;
 	line-height: 45px;
 	border-radius: 5px;
@@ -68,11 +69,33 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
-.menu__link:hover {
+.menu__link:hover .select{
 	background: white;
 	color: #fba919;
 }
 
 .show {
 	left: 0;
+}
+
+/*--------------------------------Banner Style--------------------------------*/
+
+.banner {
+	margin-top: -60px;
+	position: relative;
+	z-index: -1000;
+}
+
+.banner .container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.banner_txt {
+	display: none;
 }
